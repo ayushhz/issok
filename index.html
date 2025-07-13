@@ -1,0 +1,345 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SymptomScribe AI - AI-Powered Health Diagnosis</title>
+    <meta name="description" content="Get instant, AI-powered health insights from your symptoms and medical images">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M11 2a2 2 0 0 0-2 2v5H4a2 2 0 0 0-2 2v2c0 1.1.9 2 2 2h5v5a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-5h5a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2h-5V4a2 2 0 0 0-2-2h-2z"/>
+                </svg>
+                <span class="nav-title">SymptomScribe AI</span>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#symptoms" class="nav-link">Symptoms</a>
+                <a href="#image" class="nav-link">Image</a>
+            </div>
+            
+            <div class="nav-toggle" id="navToggle">
+                <div class="nav-toggle-line"></div>
+                <div class="nav-toggle-line"></div>
+                <div class="nav-toggle-line"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="hero-shape hero-shape-1"></div>
+            <div class="hero-shape hero-shape-2"></div>
+            <div class="hero-shape hero-shape-3"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                    </svg>
+                </div>
+                
+                <h1 class="hero-title">
+                    AI-Powered Health Diagnosis
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Get instant, personalized health insights from your symptoms and medical images using advanced artificial intelligence
+                </p>
+                
+                <div class="hero-buttons">
+                    <a href="#symptoms" class="btn btn-primary">
+                        Start Diagnosis
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M7 13l3 3 7-7"/>
+                        </svg>
+                    </a>
+                    <a href="#about" class="btn btn-secondary">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose SymptomScribe AI?</h2>
+                <p class="section-subtitle">
+                    Cutting-edge AI technology meets healthcare expertise to provide you with reliable, instant health insights
+                </p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2Z"/>
+                            <path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.98-3A2.5 2.5 0 0 0 14.5 2Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">AI-Powered Analysis</h3>
+                    <p class="feature-description">
+                        Advanced machine learning algorithms analyze your symptoms with medical-grade accuracy
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/>
+                            <path d="M9 12l2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Privacy First</h3>
+                    <p class="feature-description">
+                        Your health data is encrypted and processed securely. We never store your personal information
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Instant Results</h3>
+                    <p class="feature-description">
+                        Get comprehensive health insights within seconds, not days
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Expert Backed</h3>
+                    <p class="feature-description">
+                        Our AI is trained on medical literature and validated by healthcare professionals
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Symptoms Section -->
+    <section id="symptoms" class="symptoms">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Symptom Analysis</h2>
+                <p class="section-subtitle">
+                    Describe your symptoms and get AI-powered health insights
+                </p>
+            </div>
+            
+            <div class="diagnosis-form">
+                <form id="symptomForm" class="form">
+                    <div class="form-group">
+                        <label for="symptoms" class="form-label">Describe your symptoms</label>
+                        <textarea 
+                            id="symptoms" 
+                            name="symptoms" 
+                            rows="4" 
+                            class="form-textarea"
+                            placeholder="Please describe your symptoms in detail (e.g., headache, fever, fatigue)..."
+                        ></textarea>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="age" class="form-label">Age</label>
+                            <input type="number" id="age" name="age" class="form-input" placeholder="25" min="1" max="120">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="gender" class="form-label">Gender</label>
+                            <select id="gender" name="gender" class="form-select">
+                                <option value="">Select gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="duration" class="form-label">Symptom duration</label>
+                        <select id="duration" name="duration" class="form-select">
+                            <option value="">Select duration</option>
+                            <option value="hours">Few hours</option>
+                            <option value="days">Few days</option>
+                            <option value="weeks">Few weeks</option>
+                            <option value="months">Few months</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-full">
+                        Analyze Symptoms
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5"/>
+                            <path d="M2 12l10 5 10-5"/>
+                        </svg>
+                    </button>
+                </form>
+                
+                <div id="symptomResults" class="results hidden">
+                    <h3 class="results-title">Analysis Results</h3>
+                    <div class="results-content">
+                        <p>Your symptoms have been analyzed. Please note that this is for informational purposes only and should not replace professional medical advice.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Diagnosis Section -->
+    <section id="image" class="image-diagnosis">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Image Diagnosis</h2>
+                <p class="section-subtitle">
+                    Upload medical images for AI-powered analysis
+                </p>
+            </div>
+            
+            <div class="diagnosis-form">
+                <form id="imageForm" class="form">
+                    <div class="upload-area" id="uploadArea">
+                        <div class="upload-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                <polyline points="17,8 12,3 7,8"/>
+                                <line x1="12" y1="3" x2="12" y2="15"/>
+                            </svg>
+                        </div>
+                        <h3 class="upload-title">Upload Medical Image</h3>
+                        <p class="upload-description">
+                            Drag and drop your image here or click to browse
+                        </p>
+                        <input type="file" id="imageInput" accept="image/*" class="upload-input">
+                        <button type="button" class="btn btn-secondary" onclick="document.getElementById('imageInput').click()">
+                            Choose File
+                        </button>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="imageType" class="form-label">Image Type</label>
+                        <select id="imageType" name="imageType" class="form-select">
+                            <option value="">Select image type</option>
+                            <option value="xray">X-Ray</option>
+                            <option value="mri">MRI</option>
+                            <option value="ct">CT Scan</option>
+                            <option value="skin">Skin Condition</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-full">
+                        Analyze Image
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 9v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9"/>
+                            <path d="M1 5l11-4 11 4"/>
+                            <path d="M3 17l6-6 2 2 8-8"/>
+                        </svg>
+                    </button>
+                </form>
+                
+                <div id="imageResults" class="results hidden">
+                    <h3 class="results-title">Image Analysis Results</h3>
+                    <div class="results-content">
+                        <p>Your image has been analyzed. Please consult with a healthcare professional for proper diagnosis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M11 2a2 2 0 0 0-2 2v5H4a2 2 0 0 0-2 2v2c0 1.1.9 2 2 2h5v5a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-5h5a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2h-5V4a2 2 0 0 0-2-2h-2z"/>
+                        </svg>
+                        <span>SymptomScribe AI</span>
+                    </div>
+                    <p class="footer-description">
+                        Advanced AI-powered health diagnosis platform providing instant, reliable health insights for better healthcare decisions.
+                    </p>
+                    <div class="footer-heart">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                        </svg>
+                        <span>Made with care for your health</span>
+                    </div>
+                </div>
+                
+                <div class="footer-features">
+                    <h3 class="footer-title">Features</h3>
+                    <ul class="footer-list">
+                        <li>Symptom Analysis</li>
+                        <li>Image Diagnosis</li>
+                        <li>AI Prescriptions</li>
+                        <li>Privacy First</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-notice">
+                    <h3 class="footer-title">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/>
+                        </svg>
+                        Important Notice
+                    </h3>
+                    <div class="footer-notice-content">
+                        <p>This is a preliminary analysis tool.</p>
+                        <p>Always consult healthcare professionals.</p>
+                        <p>Not for emergency situations.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 SymptomScribe AI. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
